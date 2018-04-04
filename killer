@@ -1,0 +1,25 @@
+#!/bin/bash
+
+clear
+
+echo "Killing chat apps ..."
+
+APPS_TO_KILL=("[S]kype" "[S]lack" "[T]elegram")
+
+for i in ${APPS_TO_KILL[@]}; do
+    echo ${i}
+    kill -9 $(ps aux | grep ${i} | awk '{print $2}')
+done;
+
+progressBar=##############################
+
+for i in {1..30}; do
+  echo -ne "${progressBar:0:i}(${i} minutes passed out of 30)\r"
+  sleep 60
+done;
+
+open -na /Applications/Skype.app
+open -na /Applications/Slack.app
+open -na /Applications/Telegram.app
+
+exit 0
