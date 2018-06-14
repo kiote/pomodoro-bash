@@ -5,5 +5,5 @@ Run it with ./killer
 
 ## Also contains
 
-Corgs json files
+[Corgi](https://github.com/DrakeW/corgi) json files
 
