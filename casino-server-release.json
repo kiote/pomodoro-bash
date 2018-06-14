@@ -1,0 +1,13 @@
+{
+  "title": "casino-server-release",
+  "steps": [
+    {
+      "command": "git pull \u0026\u0026 git pull --tags",
+      "description": "git pull"
+    },
+    {
+      "command": "git tag casino-server-release-\u003crelease_num\u003e \u0026\u0026 git push --tags",
+      "description": "release tag"
+    }
+  ]
+}
