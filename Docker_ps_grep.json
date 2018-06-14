@@ -1,0 +1,9 @@
+{
+  "title": "Docker ps grep",
+  "steps": [
+    {
+      "command": "docker ps | grep \u003cname\u003e",
+      "description": "Docker ps grep"
+    }
+  ]
+}

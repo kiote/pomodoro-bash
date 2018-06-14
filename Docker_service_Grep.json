@@ -1,0 +1,9 @@
+{
+  "title": "Docker service Grep",
+  "steps": [
+    {
+      "command": "docker service ls | grep \u003cname\u003e",
+      "description": "Docker service grap"
+    }
+  ]
+}
